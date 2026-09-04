@@ -3,31 +3,32 @@ function Home() {
     <div id="Home" className="home-container">
       <section className="hero">
         <div className="hero-content">
-          <h1>Hi, I&apos;m Vino Praveen</h1>
-          <p className="hero-subtitle">Front-End Developer</p>
+          <h1>Hi, I&apos;m Vino Praveen A</h1>
+          <p className="hero-subtitle">Aspiring Java Full Stack Developer</p>
           <p className="hero-description">
-            I build responsive, accessible web applications with React.js and modern
-            front-end tools. Focused on writing clean code that delivers real user value.
+            B.Sc. Computer Science graduate building practical web applications
+            with HTML, CSS, and JavaScript while growing into Java full stack
+            development with Core Java, JDBC, and Spring Boot.
           </p>
           <div className="hero-buttons">
-            <a href="#Projects" className="btn btn-primary">View My Work</a>
-            <a href="#Contact" className="btn btn-secondary">Get In Touch</a>
+            <a href="#Projects" className="btn btn-primary">View My Projects</a>
+            <a href="#Contact" className="btn btn-secondary">Contact Me</a>
           </div>
         </div>
       </section>
 
       <section className="quick-intro">
         <div className="intro-card">
-          <h3>Focus</h3>
-          <p>React.js, JavaScript, Responsive UI</p>
+          <h3>Foundation</h3>
+          <p>HTML5, CSS3, JavaScript, Java, SQL</p>
+        </div>
+        <div className="intro-card">
+          <h3>Currently Learning</h3>
+          <p>Core Java, JDBC, Spring Boot</p>
         </div>
         <div className="intro-card">
           <h3>Tools</h3>
-          <p>Git, GitHub, VS Code, Vite</p>
-        </div>
-        <div className="intro-card">
-          <h3>Currently</h3>
-          <p>Expanding into full-stack development and API integration</p>
+          <p>VS Code, Eclipse IDE, Git, GitHub</p>
         </div>
       </section>
     </div>

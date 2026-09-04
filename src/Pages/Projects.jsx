@@ -5,34 +5,40 @@ function Projects() {
     {
       id: 1,
       title: 'Farmer-to-Consumer Marketplace',
-      shortDescription: 'A direct-to-consumer marketplace connecting local farmers with buyers.',
+      shortDescription:
+        'A responsive marketplace connecting local farmers directly with consumers for product discovery and enquiry.',
       description:
-        'A responsive web application that lets farmers list their products and consumers browse and purchase directly. Built to simplify the local food supply chain with a clean, accessible interface.',
+        'Built a responsive web application that enables farmers to list their products and lets consumers browse, discover, and enquire directly. The application supports an add-to-browse-to-inquiry flow, providing a clean interface for direct farm-to-consumer transactions.',
       technologies: ['HTML5', 'CSS3', 'JavaScript'],
       highlights: [
-        'Responsive layout optimized for mobile and desktop',
-        'Interactive product listings with vanilla JavaScript',
-        'Form handling for user input and product submissions',
-        'Git-based version control workflow',
+        'Responsive design optimized for mobile and desktop',
+        'Product discovery through clean navigation and listings',
+        'Add-to-browse-to-inquiry user flow',
+        'Form handling for user enquiries and submissions',
+        'Version control with Git and GitHub',
       ],
       features: 'Product Listings, Navigation, Form Handling, Responsive Layout',
-      github: 'https://github.com/vinopraveen',
+      liveUrl: 'https://vinopraveen.github.io/Direct-farm/',
+      githubUrl: 'https://github.com/vinopraveen/Direct-farm',
     },
     {
       id: 2,
       title: 'Personal Portfolio Website',
-      shortDescription: 'A developer portfolio showcasing projects and technical skills.',
+      shortDescription:
+        'A developer portfolio showcasing technical projects and career direction.',
       description:
-        'A single-page portfolio built with React.js and Vite, featuring smooth scroll navigation, skill visualization, and a contact form. Designed to present my work and growth as a developer.',
+        'Designed and built a single-page portfolio using React.js and Vite to present academic and technical projects. Features smooth scroll navigation, interactive components, and responsive design across all devices. Deployed to GitHub Pages.',
       technologies: ['React.js', 'Vite', 'CSS3', 'JavaScript'],
       highlights: [
         'Component-based architecture with React',
-        'Intersection Observer animations for scroll-driven reveals',
         'Responsive design across all device sizes',
+        'Interactive UI with scroll-driven animations',
         'Accessible markup with semantic HTML',
+        'Deployed and hosted on GitHub Pages',
       ],
-      features: 'Scroll Navigation, Skill Bars, Contact Form, Project Showcase',
-      github: 'https://github.com/vinopraveen',
+      features: 'Scroll Navigation, Interactive UI, Responsive Design, Contact Form',
+      liveUrl: 'https://vinopraveen.github.io/Portfolio/',
+      githubUrl: 'https://github.com/vinopraveen/Portfolio',
     },
   ];
 
@@ -40,8 +46,8 @@ function Projects() {
     <div id="Projects" className="projects-container reveal">
       <h1>My Projects</h1>
       <p className="projects-intro">
-        Hands-on projects that demonstrate my front-end development skills, problem-solving
-        approach, and attention to user experience.
+        Practical web applications built with HTML, CSS, and JavaScript&mdash;each
+        project demonstrating problem-solving, responsive design, and clean code.
       </p>
 
       <div className="projects-grid">
@@ -53,15 +59,15 @@ function Projects() {
       <section className="projects-section">
         <h2>What I&apos;m Building Next</h2>
         <p>
-          I&apos;m focusing on deeper React.js projects to strengthen my front-end
-          capabilities. My next builds will demonstrate:
+          My next projects will incorporate Java full stack technologies as I
+          expand beyond front-end development:
         </p>
         <ul className="next-projects">
-          <li>Component composition and reusable patterns</li>
-          <li>State management with hooks</li>
-          <li>Dynamic routing with React Router</li>
-          <li>Form handling and validation</li>
-          <li>API integration and data fetching</li>
+          <li>REST APIs with Spring Boot</li>
+          <li>Database connectivity with JDBC and SQL</li>
+          <li>Full stack applications combining frontend and backend</li>
+          <li>Form handling and validation with server-side logic</li>
+          <li>Authentication and authorization basics</li>
         </ul>
       </section>
     </div>

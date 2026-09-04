@@ -34,8 +34,9 @@ function Contact() {
     <div id="Contact" className="contact-container reveal">
       <h1>Get In Touch</h1>
       <p className="contact-intro">
-        Have a project in mind, an opportunity to discuss, or just want to connect?
-        I&apos;d love to hear from you.
+        I&apos;m actively looking for entry-level developer opportunities and
+        open to collaboration. If you have a role, project, or idea worth
+        discussing, I&apos;d like to hear from you.
       </p>
 
       <div className="contact-content">
@@ -75,7 +76,7 @@ function Contact() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell me about your project or opportunity..."
+                  placeholder="Tell me about the opportunity or project..."
                   rows="6"
                   required
                 ></textarea>
@@ -90,7 +91,7 @@ function Contact() {
               <div className="success-icon" aria-hidden="true">&#10003;</div>
               <h2>Thank You, {formData.name}!</h2>
               <p>
-                I&apos;ve received your message and will get back to you as soon as possible.
+                I&apos;ve received your message and will respond as soon as possible.
               </p>
               <p className="success-note">
                 Redirecting you back in a moment...
@@ -124,25 +125,16 @@ function Contact() {
           <div className="contact-info">
             <h3>Connect</h3>
             <div className="social-links">
-              <a href="https://github.com/vinopraveen" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://github.com/vinopraveen" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub profile">
                 GitHub
               </a>
-              <a href="https://www.linkedin.com/in/vino-praveen" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.linkedin.com/in/vino-praveen" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn profile">
                 LinkedIn
               </a>
             </div>
           </div>
         </section>
       </div>
-
-      <section className="contact-section">
-        <h2>Response Time</h2>
-        <p>
-          I typically respond within 24&ndash;48 hours. Whether you have a project
-          opportunity, a collaboration idea, or just want to say hello&mdash;feel
-          free to reach out.
-        </p>
-      </section>
     </div>
   );
 }

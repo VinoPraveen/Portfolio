@@ -51,11 +51,23 @@ function ProjectCard({ project, index = 0 }) {
           aria-expanded={expanded}
         >
           {expanded ? 'Show Less' : 'View Details'}
+          <span className={`expand-arrow ${expanded ? 'rotated' : ''}`} aria-hidden="true">&#8595;</span>
         </button>
 
-        {project.github && (
+        {project.liveUrl && (
           <a
-            href={project.github}
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary project-link-btn"
+          >
+            Live Demo &#8599;
+          </a>
+        )}
+
+        {project.githubUrl && (
+          <a
+            href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-secondary project-link-btn"

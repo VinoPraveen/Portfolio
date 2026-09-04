@@ -1,11 +1,14 @@
 import { useEffect } from 'react';
 import Home from "./Pages/Home";
 import About from "./Pages/About";
+import Skills from "./Pages/Skills";
+import Projects from './Pages/Projects';
+import Experience from './Pages/Experience';
+import Education from './Pages/Education';
+import Certifications from './Pages/Certifications';
 import Contact from './Pages/Contact';
-import Project from './Pages/Projects';
 import Navbar from './Components/Navbar';
 import './Components/Navbar.css';
-import Skills from './Pages/Skills';
 import './index.css';
 
 function App() {
@@ -33,8 +36,11 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Project />
       <Skills />
+      <Projects />
+      <Experience />
+      <Education />
+      <Certifications />
       <Contact />
     </div>
   );

@@ -65,6 +65,7 @@
     border-left: 1px solid rgba(212, 175, 55, 0.2);
     box-shadow: -8px 0 30px rgba(0, 0, 0, 0.5);
     z-index: 55;
+    overflow-y: auto;
   }
 
   .nav-links.open {
@@ -77,9 +78,9 @@
 
   .nav-links a {
     display: block;
-    padding: 0.9rem 0;
+    padding: 0.75rem 0;
     border-bottom: 1px solid rgba(157, 111, 209, 0.15);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
   }
 
   .nav-links a::after {
