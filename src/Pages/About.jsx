@@ -1,28 +1,42 @@
-
 function About() {
   return (
-    <div id="About" className="about-container">
+    <div id="About" className="about-container reveal">
       <h1>About Me</h1>
 
       <section className="about-section">
-        <h2>Who Am I?</h2>
+        <h2>Who I Am</h2>
         <p>
-          I'm Vino Praveen, a self-motivated front-end web developer from Chennai, Tamil Nadu. 
-          With a B.Sc. in Computer Science, I'm passionate about building clean, user-friendly 
-          web applications using modern technologies like React.js.
+          I&apos;m Vino Praveen, a front-end web developer based in Chennai, Tamil Nadu.
+          I hold a B.Sc. in Computer Science and spend my time building practical,
+          user-friendly web applications with modern technologies.
         </p>
       </section>
 
       <section className="about-section">
-        <h2>My Journey</h2>
+        <h2>What I Build</h2>
         <p>
-          Starting with HTML, CSS, and JavaScript fundamentals, I've built several projects from scratch 
-          including a Farmer-to-Consumer marketplace and a personal portfolio website. Currently, I'm 
-          deepening my expertise in React.js to create more interactive and scalable applications.
+          I started with HTML, CSS, and JavaScript and progressively moved toward
+          component-based architecture with React.js. My projects include a
+          farmer-to-consumer marketplace and this portfolio&mdash;each one teaching
+          me something new about clean code, responsive design, and real-world problem solving.
         </p>
+      </section>
+
+      <section className="about-section">
+        <h2>Currently Learning</h2>
         <p>
-          I'm a quick learner who thrives on solving problems and writing clean code. Every project 
-          teaches me something new, and I'm always excited to apply these learnings to real-world applications.
+          I&apos;m deepening my React.js skills&mdash;component composition, hooks,
+          state management, and dynamic routing. I&apos;m also exploring API
+          integration and full-stack concepts to broaden what I can build end to end.
+        </p>
+      </section>
+
+      <section className="about-section">
+        <h2>Career Goal</h2>
+        <p>
+          I&apos;m looking for a junior front-end or full-stack developer role where I
+          can contribute to real products, learn from experienced engineers, and grow
+          into a well-rounded software developer.
         </p>
       </section>
 
@@ -30,7 +44,7 @@ function About() {
         <h2>Education</h2>
         <div className="education-item">
           <h3>B.Sc. Computer Science</h3>
-          <p className="school-name">Apollo Arts & Science College, Chennai</p>
+          <p className="school-name">Apollo Arts &amp; Science College, Chennai</p>
           <p className="year">2026</p>
         </div>
         <div className="education-item">
@@ -43,11 +57,11 @@ function About() {
       <section className="about-section">
         <h2>Internship Experience</h2>
         <div className="internship-item">
-          <h3>Intern at Infogrow Solutions</h3>
+          <h3>Intern &mdash; Infogrow Solutions</h3>
           <p className="duration">25 Days</p>
           <p>
-            Contributed to documentation and requirement-understanding processes for software 
-            development projects, supporting the team's SDLC workflow.
+            Contributed to documentation and requirement-understanding processes for
+            software development projects, supporting the team&apos;s SDLC workflow.
           </p>
         </div>
       </section>
@@ -55,8 +69,8 @@ function About() {
       <section className="about-section">
         <h2>Certifications</h2>
         <ul className="certifications-list">
-          <li>Cloud Security Fundamentals — IBM SkillsBuild</li>
-          <li>Lingua Skill Cambridge Certificate (B1 Level) — 2024</li>
+          <li>Cloud Security Fundamentals &mdash; IBM SkillsBuild</li>
+          <li>Lingua Skill Cambridge Certificate (B1 Level) &mdash; 2024</li>
         </ul>
       </section>
 
@@ -72,15 +86,6 @@ function About() {
             <p>Native Proficiency</p>
           </div>
         </div>
-      </section>
-
-      <section className="about-section">
-        <h2>Personal Values</h2>
-        <p>
-          I believe in writing code that others can understand and maintain. I value collaboration, 
-          continuous learning, and approaching problems with creativity and analytical thinking. 
-          Every line of code is an opportunity to build something meaningful.
-        </p>
       </section>
     </div>
   );

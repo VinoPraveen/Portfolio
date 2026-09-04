@@ -4,54 +4,60 @@ function Projects() {
   const projectsList = [
     {
       id: 1,
-      title: 'Farmer-to-Consumer Web Application',
-      description: 'A responsive marketplace web application that connects farmers and consumers directly. Features interactive product listings, navigation, and form handling.',
+      title: 'Farmer-to-Consumer Marketplace',
+      shortDescription: 'A direct-to-consumer marketplace connecting local farmers with buyers.',
+      description:
+        'A responsive web application that lets farmers list their products and consumers browse and purchase directly. Built to simplify the local food supply chain with a clean, accessible interface.',
       technologies: ['HTML5', 'CSS3', 'JavaScript'],
       highlights: [
-        'Responsive design for mobile-friendly experience',
-        'Interactive features with vanilla JavaScript',
-        'Version control with Git and GitHub',
-        'Clean, accessible UI for better usability'
+        'Responsive layout optimized for mobile and desktop',
+        'Interactive product listings with vanilla JavaScript',
+        'Form handling for user input and product submissions',
+        'Git-based version control workflow',
       ],
-      features: 'Product Listings • Navigation • Form Handling • Responsive Layout'
+      features: 'Product Listings, Navigation, Form Handling, Responsive Layout',
+      github: 'https://github.com/vinopraveen',
     },
     {
       id: 2,
       title: 'Personal Portfolio Website',
-      description: 'A responsive personal portfolio showcasing academic and technical projects. Built with vanilla JavaScript and optimized for accessibility across devices.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript'],
+      shortDescription: 'A developer portfolio showcasing projects and technical skills.',
+      description:
+        'A single-page portfolio built with React.js and Vite, featuring smooth scroll navigation, skill visualization, and a contact form. Designed to present my work and growth as a developer.',
+      technologies: ['React.js', 'Vite', 'CSS3', 'JavaScript'],
       highlights: [
-        'Interactive UI components with vanilla JavaScript',
-        'Optimized for accessibility and SEO',
-        'Cross-device compatibility',
-        'Clean, professional design'
+        'Component-based architecture with React',
+        'Intersection Observer animations for scroll-driven reveals',
+        'Responsive design across all device sizes',
+        'Accessible markup with semantic HTML',
       ],
-      features: 'Responsive Design • Interactive UI • Accessibility Focus • Project Showcase'
-    }
+      features: 'Scroll Navigation, Skill Bars, Contact Form, Project Showcase',
+      github: 'https://github.com/vinopraveen',
+    },
   ];
 
   return (
-    <div id="Projects" className="projects-container">
+    <div id="Projects" className="projects-container reveal">
       <h1>My Projects</h1>
       <p className="projects-intro">
-        Here are some of the web applications I've built. Each project demonstrates my skills 
-        in front-end development, problem-solving, and user experience design.
+        Hands-on projects that demonstrate my front-end development skills, problem-solving
+        approach, and attention to user experience.
       </p>
 
       <div className="projects-grid">
-        {projectsList.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+        {projectsList.map((project, index) => (
+          <ProjectCard key={project.id} project={project} index={index} />
         ))}
       </div>
 
       <section className="projects-section">
-        <h2>What I'm Building Next</h2>
+        <h2>What I&apos;m Building Next</h2>
         <p>
-          I'm currently focusing on React.js projects to strengthen my front-end capabilities. 
-          My next portfolio piece will be a React-based application that demonstrates:
+          I&apos;m focusing on deeper React.js projects to strengthen my front-end
+          capabilities. My next builds will demonstrate:
         </p>
         <ul className="next-projects">
-          <li>Component composition and reusability</li>
+          <li>Component composition and reusable patterns</li>
           <li>State management with hooks</li>
           <li>Dynamic routing with React Router</li>
           <li>Form handling and validation</li>

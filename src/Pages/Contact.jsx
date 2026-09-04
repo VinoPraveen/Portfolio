@@ -19,12 +19,10 @@ function Contact() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    
-    
+
     if (formData.name && formData.email && formData.message) {
       setSubmitted(true);
-      
-      // Reset after  seconds
+
       setTimeout(() => {
         setFormData({ name: '', email: '', message: '' });
         setSubmitted(false);
@@ -33,17 +31,17 @@ function Contact() {
   }
 
   return (
-    <div id="Contact" className="contact-container">
+    <div id="Contact" className="contact-container reveal">
       <h1>Get In Touch</h1>
       <p className="contact-intro">
-        I'm always interested in hearing about new projects and opportunities. 
-        Feel free to reach out using the form below or connect with me directly.
+        Have a project in mind, an opportunity to discuss, or just want to connect?
+        I&apos;d love to hear from you.
       </p>
 
       <div className="contact-content">
         <section className="contact-form-section">
           {!submitted ? (
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form onSubmit={handleSubmit} className="contact-form" aria-label="Contact form">
               <div className="form-group">
                 <label htmlFor="name">Your Name *</label>
                 <input
@@ -88,11 +86,11 @@ function Contact() {
               </button>
             </form>
           ) : (
-            <div className="success-message">
-              <div className="success-icon">✓</div>
-              <h2>Thank You, {formData.name}! 🎉</h2>
+            <div className="success-message" role="status">
+              <div className="success-icon" aria-hidden="true">&#10003;</div>
+              <h2>Thank You, {formData.name}!</h2>
               <p>
-                I've received your message and will get back to you as soon as possible.
+                I&apos;ve received your message and will get back to you as soon as possible.
               </p>
               <p className="success-note">
                 Redirecting you back in a moment...
@@ -105,7 +103,7 @@ function Contact() {
           <h2>Other Ways to Reach Me</h2>
 
           <div className="contact-info">
-            <h3> Email</h3>
+            <h3>Email</h3>
             <a href="mailto:avinopraveen@gmail.com" className="contact-link">
               avinopraveen@gmail.com
             </a>
@@ -119,12 +117,12 @@ function Contact() {
           </div>
 
           <div className="contact-info">
-            <h3> Location</h3>
+            <h3>Location</h3>
             <p>Chennai, Tamil Nadu, India</p>
           </div>
 
           <div className="contact-info">
-            <h3>🔗 Connect</h3>
+            <h3>Connect</h3>
             <div className="social-links">
               <a href="https://github.com/vinopraveen" target="_blank" rel="noopener noreferrer" className="social-link">
                 GitHub
@@ -140,8 +138,9 @@ function Contact() {
       <section className="contact-section">
         <h2>Response Time</h2>
         <p>
-          I try to respond to all messages within 24-48 hours. Whether you have a project opportunity, 
-          collaboration proposal, or just want to say hello, I'd love to hear from you!
+          I typically respond within 24&ndash;48 hours. Whether you have a project
+          opportunity, a collaboration idea, or just want to say hello&mdash;feel
+          free to reach out.
         </p>
       </section>
     </div>
