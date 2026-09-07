@@ -6,7 +6,7 @@ function Experience() {
       <section className="experience-card">
         <div className="experience-header">
           <h2>Intern &mdash; Infogrow Solutions</h2>
-          <span className="duration">25 Days</span>
+          <span className="duration"></span>
         </div>
         <ul className="experience-list">
           <li>Supported the team&apos;s software development lifecycle (SDLC) workflow</li>
